@@ -914,13 +914,14 @@ footer ul a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   html {
     font-size: 50%;
   }
   body,
   html {
-    max-width: 375px;
+    max-width: 767px;
+    margin: 0 auto;
   }
   header {
     min-height: unset;
@@ -1003,6 +1004,9 @@ footer ul a {
   header .hero .hero-image .options {
     width: 100%;
     padding: 1rem;
+  }
+  header .hero .hero-image .options select {
+    width: 50%;
   }
   main .intro {
     min-height: unset;
@@ -1236,7 +1240,7 @@ footer ul a {
   }
   main .landlord .right {
     height: 300px;
-    width: 375px;
+    width: 100%;
   }
   main .landlord .right button {
     padding: 2.2rem;
@@ -1256,10 +1260,54 @@ footer ul a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: unset;
+    margin: 3rem;
     padding-top: 2rem;
-    gap: 1rem;
+    gap: unset;
     font-size: 1.6rem;
+    width: 100%;
+  }
+  main .social-handles #logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  main .social-handles .right {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    gap: 2rem;
+  }
+  main .social-handles .right p img {
+    margin-right: 1rem;
+  }
+  main .social-handles .right .call,
+  main .social-handles .right .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    gap: 10rem;
+    width: 100%;
+  }
+  main .social-handles .right .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
   }
   hr {
     margin: 0 2rem;
@@ -1268,17 +1316,17 @@ footer ul a {
     padding: 2rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   footer ul {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    place-items: center center;
-    -webkit-column-gap: 2rem;
-            column-gap: 2rem;
-    margin-left: 8%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .open-menu {
     -webkit-transform: translateX(0);

@@ -670,13 +670,14 @@ footer {
     }
   }
 }
-@media screen and(max-width:375px) {
+@media screen and(max-width:767px) {
   html {
     font-size: 50%;
   }
   body,
   html {
-    max-width: 375px;
+    max-width: 767px;
+    margin: 0 auto;
   }
 
   header {
@@ -741,6 +742,9 @@ footer {
         .options {
           width: 100%;
           padding: 1rem;
+          select {
+            width: 50%;
+          }
         }
       }
     }
@@ -943,7 +947,7 @@ footer {
 
       .right {
         height: 300px;
-        width: 375px;
+        width: 100%;
         button {
           padding: 2.2rem;
         }
@@ -961,10 +965,44 @@ footer {
     }
     .social-handles {
       flex-direction: column;
-      margin: 2rem;
+      justify-content: center;
+      align-items: center;
+      margin: unset;
+      margin: 3rem;
       padding-top: 2rem;
-      gap: 1rem;
+      gap: unset;
       font-size: 1.6rem;
+      width: 100%;
+
+      #logo{
+        align-self: flex-start;
+      }
+
+      .right {
+        display: grid;
+        // place-content: center;
+        width: 100%;
+        gap: 2rem;
+
+        p img {
+          margin-right: 1rem;
+          // margin-left: -2rem;
+
+        }
+        .call,
+        .socials {
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          gap: 10rem;
+          width: 100%;
+        }
+        .icons {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+        }
+      }
     }
   }
   hr {
@@ -973,14 +1011,12 @@ footer {
   footer {
     padding: 2rem;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
+    justify-content: center;
 
     ul {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      place-items: center center;
-      column-gap: 2rem;
-      margin-left: 8%;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
   .open-menu {
