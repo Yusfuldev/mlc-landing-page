@@ -676,6 +676,7 @@ footer {
   }
   body,
   html {
+    overflow-x: hidden;
     max-width: 767px;
     margin: 0 auto;
   }
@@ -710,8 +711,8 @@ footer {
       gap: 4rem;
       align-items: flex-start;
       justify-content: start;
-      transform: translateX(100%);
-      transition: all 1s ease;
+      visibility: collapse;
+      // transition: all 1s ease;
       .close {
         align-self: flex-end;
         margin-right: -2rem;
@@ -974,7 +975,7 @@ footer {
       font-size: 1.6rem;
       width: 100%;
 
-      #logo{
+      #logo {
         align-self: flex-start;
       }
 
@@ -987,7 +988,6 @@ footer {
         p img {
           margin-right: 1rem;
           // margin-left: -2rem;
-
         }
         .call,
         .socials {
@@ -1020,7 +1020,7 @@ footer {
     }
   }
   .open-menu {
-    transform: translateX(0);
+   visibility: visible;
   }
   .opaque {
     background: rgba(0, 0, 0, 0.2);

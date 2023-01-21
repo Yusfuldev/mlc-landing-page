@@ -920,6 +920,7 @@ footer ul a {
   }
   body,
   html {
+    overflow-x: hidden;
     max-width: 767px;
     margin: 0 auto;
   }
@@ -967,10 +968,7 @@ footer ul a {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+    visibility: collapse;
   }
   header menu .close {
     -ms-flex-item-align: end;
@@ -1329,8 +1327,7 @@ footer ul a {
             justify-content: center;
   }
   .open-menu {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    visibility: visible;
   }
   .opaque {
     background: rgba(0, 0, 0, 0.2);
