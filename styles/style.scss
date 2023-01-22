@@ -676,7 +676,6 @@ footer {
   }
   body,
   html {
-    overflow-x: hidden;
     max-width: 767px;
     margin: 0 auto;
   }
@@ -712,7 +711,6 @@ footer {
       align-items: flex-start;
       justify-content: start;
       visibility: collapse;
-      // transition: all 1s ease;
       .close {
         align-self: flex-end;
         margin-right: -2rem;
@@ -981,13 +979,11 @@ footer {
 
       .right {
         display: grid;
-        // place-content: center;
         width: 100%;
         gap: 2rem;
 
         p img {
           margin-right: 1rem;
-          // margin-left: -2rem;
         }
         .call,
         .socials {
@@ -1020,7 +1016,7 @@ footer {
     }
   }
   .open-menu {
-   visibility: visible;
+    visibility: visible;
   }
   .opaque {
     background: rgba(0, 0, 0, 0.2);

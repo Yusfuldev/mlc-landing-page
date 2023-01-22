@@ -1,3 +1,4 @@
+/***** Selectors *****/
 const openMenu = document.querySelector(".burger");
 const closeMenu = document.querySelector(".close");
 const menu = document.querySelector("menu");
@@ -13,6 +14,7 @@ openMenu.addEventListener("click", () => {
   document.body.classList.toggle("opaque");
   head.classList.toggle("opaque");
 });
+
 closeMenu.addEventListener("click", () => {
   menu.classList.toggle("open-menu");
   document.body.classList.toggle("opaque");
