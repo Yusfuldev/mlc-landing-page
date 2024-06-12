@@ -1,7 +1,6 @@
 ### Links
 
 - Solution URL: [Github](https://github.com/Yusfuldev/mlc-landing-page)
-- Live Site URL: [Netlify](https://mlc-landing-page.netlify.app/)
 
 ## Author
 
